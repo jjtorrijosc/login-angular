@@ -1,0 +1,10 @@
+<div style="float: right">
+	<h3>Bienvenido {{this.appComponent.user.username}}</h3>
+	<button (click)="salir()">Cerrar Sesión</button>
+</div>
+<div>
+	<h4>Lista de usuarios:</h4>
+	<div *ngFor="let usuario of usuarios">
+	   {{usuario.username}}
+	</div>
+</div>

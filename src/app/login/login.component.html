@@ -1,0 +1,14 @@
+<div>
+	<label>Username: 
+		<input [(ngModel)]="user.username" placeholder="nombre"/>
+	</label>
+</div>
+<div>
+	<label>Pass: 
+		<input [(ngModel)]="user.password" placeholder="contraseña"/>
+	</label>
+</div>
+<button (click)="login()">Entrar</button>
+<button (click)="singUp()">Alta</button>
+<div *ngIf="validado">Validado!!</div>
+<div *ngIf="altaRealizada">Alta!!</div>
